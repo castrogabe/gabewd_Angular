@@ -96,7 +96,6 @@
 /* gif and image not jumbotron*/
 .about {
   background-image: url(https://media1.tenor.com/images/b1b118ed130d9ab085e475ab0ecadcb6/tenor.gif?itemid=15826314);
-  /* background-image: url("/images/tools.png"); */
   background-repeat: no-repeat;
   background-size: cover;
   margin-bottom: 1em;
