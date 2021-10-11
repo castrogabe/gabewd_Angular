@@ -1,1 +1,314 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+[class*="col-"] {
+  padding: 15px;
+}
+
+/* CSS Variables */
+:root {
+  --primary: #ffffff;
+  --dark: #272b30;
+  --medium: #68655d;
+  --light: #ffffff;
+  --background: #f4f4f4; /* very light gray */
+  --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+}
+
+/* For desktop: */
+.content {
+  width: 100%;
+  margin: 0px;
+}
+
+.body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1em;
+  color: var(--medium);
+}
+
+.body h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1em;
+  color: var(--dark);
+}
+
+#main {
+  transition: margin-left 0.5s;
+  padding: 20px;
+  overflow: hidden;
+  width: 100%;
+}
+
+/*********** Global Styles********/
+.wrapper {
+  width: 100%;
+}
+
+.keyboard {
+  width: 100%;
+  height: auto;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.content {
+  background-color: var(--light);
+  color: var(--medium);
+  padding-left: 3%;
+  padding-right: 3%;
+  font-size: 1em;
+  padding-top: 5em;
+  padding-bottom: 5em;
+}
+
+.background {
+  background-color: var(--light);
+  padding-left: 3%;
+  padding-right: 3%;
+  font-size: 1em;
+  padding-top: 5em;
+  padding-bottom: 5em;
+}
+
+.header {
+  font-family: "Maven pro", sans-serif;
+  height: auto;
+  background-color: var(--light);
+  color: var(--dark);
+  text-align: center;
+  padding: 2.5em;
+}
+
+.content h2 {
+  font-family: "Maven pro", sans-serif;
+  color: var(--dark);
+}
+
+/* gif and image not jumbotron*/
+.about {
+  background-image: url(https://media1.tenor.com/images/b1b118ed130d9ab085e475ab0ecadcb6/tenor.gif?itemid=15826314);
+  /* background-image: url("/images/tools.png"); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.img-circle {
+  border-radius: 50%;
+  max-width: 15em;
+  position: center;
+  padding-bottom: 1em;
+  padding-top: 1em;
+}
+
+/* design for computer png */
+#design {
+  float: right;
+  margin-right: 0;
+}
+
+#about {
+  margin-top: 1em;
+}
+
+#about h2 {
+  color: #a1a1a0; /* light gray */
+  font-size: 2em;
+  padding-bottom: 1em;
+}
+
+#about span {
+  font-weight: 300;
+  font-size: 0.7em;
+}
+
+.img-circle {
+  border-radius: 50%;
+  max-width: 15em;
+  position: center;
+  bottom: 4em;
+  padding-top: 1em;
+}
+
+.work {
+  padding-top: 1em;
+}
+
+.work h2 {
+  color: #ff6945;
+  font-size: 2em;
+  margin-bottom: 0.7em;
+}
+
+.work p {
+  color: #ffffff; /* white */
+  font-size: 1.4em;
+  margin-bottom: 1em;
+}
+
+#work {
+  margin-bottom: 2em;
+}
+
+/***** visit website button *****/
+.my-button {
+  font-size: 1em;
+  line-height: normal;
+  text-transform: uppercase;
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out, color 0.2s 0.3s;
+  letter-spacing: 0;
+  border-radius: 45px;
+  height: auto;
+  padding: 0.5em 1em;
+}
+
+.my-button:hover {
+  cursor: pointer;
+  padding: 0.5em 1.5em;
+}
+
+/* button orange with orange boarder */
+.details a,
+.details a:link,
+.details a:active {
+  color: rgba(255, 103, 68, 0.91);
+  border: 2px solid rgba(255, 103, 68, 0.91) !important;
+  background-color: #fff;
+  text-decoration: none;
+  margin-left: 10%;
+}
+
+/* turns button orange on hover */
+.details a:hover,
+.details a:focus {
+  background-color: rgba(255, 103, 68, 0.91) !important;
+  color: #fff;
+}
+
+#middleBox {
+  clear: both;
+  width: 100%;
+  text-align: center;
+  background-color: #30473e;
+  padding: 2em;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--dark);
+}
+
+body {
+  background-color: #ccc;
+  margin: 10px 10px;
+  line-height: 1.4;
+}
+
+img {
+  max-width: 100%;
+}
+
+.wraper {
+  display: grid;
+  grid-gap: 20px;
+}
+
+/* info is on Portfolio page */
+.info {
+  background-color: var(--light);
+  color: var(--medium);
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 3rem;
+}
+
+.info h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--dark);
+  text-align: left;
+  padding-bottom: 10px;
+}
+
+.info p,
+a {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1em;
+  text-align: left;
+  padding: 0;
+  color: var(--medium);
+}
+/* ends info */
+
+/* footer */
+footer p {
+  text-decoration: none;
+  border-top: 2px;
+  margin-top: 1rem;
+  background: var(--dark);
+  color: var(--light);
+  text-align: center;
+  padding: 2em;
+}
+
+/* media queries */
+@media (max-width: 700px) {
+  .info h1 {
+    font-size: 1.5rem;
+  }
+
+  .info p {
+    font-size: 0.8rem;
+  }
+
+  .main-nav ul {
+    grid-template-columns: 1fr;
+  }
+
+  .info {
+    grid-template-columns: 1fr;
+  }
+
+  .info .btn {
+    display: block;
+    text-align: center;
+    margin: auto;
+  }
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+
+  .content {
+    width: 100%;
+  }
+
+  .wrapper {
+    width: 100%;
+  }
+
+  .img-circle {
+    width: 50%;
+  }
+}
